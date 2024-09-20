@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;1,900&display=swap');
+
+* {
+    font-family: 'Poppins', cursive;
+}
+
+body {
+    color: azure;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+}
+
+.greetings {
+    font-size: 6rem;
+    font-weight: 900;
+}
+
+.greetings>span {
+    animation: glow 2.5s ease-in-out infinite;
+}
+
+@keyframes glow {
+
+    0%,
+    100% {
+        color: #fff;
+        text-shadow: 0 0 12px #39c6d6, 0 0 50px #39c6d6, 0 0 100px #39c6d6;
+    }
+
+    10%,
+    90% {
+        color: #111;
+        text-shadow: none;
+    }
+}
+
+.greetings>span:nth-child(2) {
+    animation-delay: .2s;
+}
+
+.greetings>span:nth-child(3) {
+    animation-delay: .4s;
+}
+
+.greetings>span:nth-child(4) {
+    animation-delay: .6s;
+}
+
+.greetings>span:nth-child(5) {
+    animation-delay: .8s;
+}
+.greetings>span:nth-child(6) {
+    animation-delay: 1s;
+}
+.greetings>span:nth-child(7) {
+    animation-delay: 1.2s;
+}
+.greetings>span:nth-child(8) {
+    animation-delay: 1.4s;
+}
+.greetings>span:nth-child(9) {
+    animation-delay: 1.6s;
+}
+
+.description {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.button-container a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.button {
+    position: relative;
+    overflow: hidden;
+    height: 3rem;
+    padding: 0 2rem;
+    border: 0;
+    border-radius: 1.5rem;
+    -webkit-border-radius: 1.5rem;
+    -moz-border-radius: 1.5rem;
+    -ms-border-radius: 1.5rem;
+    -o-border-radius: 1.5rem;
+    background: #3d384e;
+    background-size: 400%;
+    color: #fff;
+}
+
+.button:hover::before {
+    transform: scaleX(1);
+    -webkit-transform: scaleX(1);
+    -moz-transform: scaleX(1);
+    -ms-transform: scaleX(1);
+    -o-transform: scaleX(1);
+}
+
+.button-container {
+    font-size: 16px;
+    position: relative;
+    z-index: 1;
+}
+
+.button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: scaleX(0);
+    -webkit-transform: scaleX(0);
+    -moz-transform: scaleX(0);
+    -ms-transform: scaleX(0);
+    -o-transform: scaleX(0);
+    transform-origin: 0 50%;
+    width: 100%;
+    height: inherit;
+    border-radius: inherit;
+    -webkit-border-radius: inherit;
+    -moz-border-radius: inherit;
+    -ms-border-radius: inherit;
+    -o-border-radius: inherit;
+    background: linear-gradient(83.2deg,rgba(150, 93, 233, 1)10.8%, rgba(99, 88, 238, 1)94.3%);
+    transition: all 0.475s;
+    -webkit-transition: all 0.475s;
+    -moz-transition: all 0.475s;
+    -ms-transition: all 0.475s;
+    -o-transition: all 0.475s;
+}
